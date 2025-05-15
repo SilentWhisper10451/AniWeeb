@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Fav Waifus</title>
+    <link rel="stylesheet" href="io.css">
+    <script>
+        function confirmLogout() {
+            if (confirm("Are you sure you want to log out?")) 
+            {
+                window.location.href = "login.html";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="hiho.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" onclick="confirmLogout()">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Contact Us</h1>
+            <p>Have a question or comment about My Fav Waifus? Let us know!</p>
+            <h2>Get in Touch</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea><br><br>
+                <input type="submit" value="Send Message">
+            </form>
+            <p>Contact information:</p>
+            <p>johnmonching.flores@ckcm.edu.ph</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Fav Waifus <br> John Monching Flores</p>
+    </footer>
+</body>
+</html>
